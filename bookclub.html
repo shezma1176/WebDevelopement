@@ -5,6 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mount Caramel Book Club</title>
+     <style>
+body{
+    background-color: aquamarine;
+}
+header{
+    background-color: antiquewhite;
+}
+nav{
+    background-color: azure;
+}
+#intro{
+    background-color: lavender;
+}
+.main-section-content h2{
+    background-color: lightblue;
+}
+#bestsellers, footer{
+    background-color: lightgreen;
+}
+header, 
+nav, 
+#intro, 
+#bestsellers,
+#main-section,
+footer{
+    border: 1px solid black
+}
+    </style> 
 </head>
 
 <body>
@@ -73,71 +101,83 @@
             </div>
 
             <!-- content 2 -->
-            <h2>Book Reviews</h2>
-            <h3>Alice in Wonderland</h3>
-            <p><strong>Amit:</strong> <q>I loved reading this book. This is a must read for eberyone. </q></p>
-            <p><strong>Shekhar:</strong> <q>I enjoyed reading this book. </q></p>
+            <div id="book-reviews" class="main-section-content">
+                <h2>Book Reviews</h2>
+                <h3>Alice in Wonderland</h3>
+                <p><strong>Amit:</strong> <q>I loved reading this book. This is a must read for eberyone. </q></p>
+                <p><strong>Shekhar:</strong> <q>I enjoyed reading this book. </q></p>
 
+            </div>
             <!-- content 3 (Video) -->
 
-            <iframe src="https://www.youtube.com/results?search_query=book+recap+videos" frameborder="0"></iframe>
+            <div id="videos" class="main-section-content">
+                <iframe src="https://www.youtube.com/results?search_query=book+recap+videos" frameborder="0"></iframe>
+            </div>
 
             <!--  content 4 ( Table)-->
-            <h2>Opening Timings</h2>
-            <table>
-                <tr>
+            <div class="main-section-content">
+                <h2>Opening Timings</h2>
+                <table>
+                    <tr>
 
-                    <th>Monday</th>
-                    <td>11am - 3pm</td>
-                </tr>
-                <tr>
+                        <th>Monday</th>
+                        <td>11am - 3pm</td>
+                    </tr>
+                    <tr>
 
-                    <th>Tuesday</th>
-                    <td>11am - 3pm</td>
-                </tr>
-                <tr>
+                        <th>Tuesday</th>
+                        <td>11am - 3pm</td>
+                    </tr>
+                    <tr>
 
-                    <th>Wednesday</th>
-                    <td>11am - 3pm</td>
-                </tr>
-                <tr>
+                        <th>Wednesday</th>
+                        <td>11am - 3pm</td>
+                    </tr>
+                    <tr>
 
-                    <th>Thursday</th>
-                    <td>11am - 3pm</td>
-                </tr>
-                <tr>
+                        <th>Thursday</th>
+                        <td>11am - 3pm</td>
+                    </tr>
+                    <tr>
 
-                    <th>Friday</th>
-                    <td>11am - 1pm</td>
-                </tr>
-                <tr>
+                        <th>Friday</th>
+                        <td>11am - 1pm</td>
+                    </tr>
+                    <tr>
 
-                    <th>Saturday</th>
-                    <td>11am - 1pm</td>
-                </tr>
-                <tr>
+                        <th>Saturday</th>
+                        <td>11am - 1pm</td>
+                    </tr>
+                    <tr>
 
-                    <th>Sunday</th>
-                    <td>Closed</td>
-                </tr>
-            </table>
+                        <th>Sunday</th>
+                        <td>Closed</td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <!-- best sellers section -->
 
-        <h2>Best Sellers Section</h2>
-        <b>Pearl Maiden</b> by <em>H.M Haggard</em><br />
-        <b>Alchemist</b> by <em>Paulo Cuelho</em><br />
-        <b>Harry Potter And The Philosopher's Stone</b> by <em>J.K Rowling</em><br />
-        <b>Debi</b> by <em>Humayun Ahmedd</em><br />
+        <div id="bestsellers">
+            <h2>Best Sellers Section</h2>
+            <ol>
+                <li><b>Pearl Maiden</b> by <em>H.M Haggard</em><br /></li>
+                <li><b>Alchemist</b> by <em>Paulo Cuelho</em><br /></li>
+                <li> <b>Harry Potter And The Philosopher's Stone</b> by <em>J.K Rowling</em><br /></li>
+                <li><b>Debi</b> by <em>Humayun Ahmedd</em><br /></li>
+            </ol>
+        </div>
 
         <!-- contacts -->
 
-        <p>Contact Us: Mrs Caroline</p>
-        <p>Phone No: +12345678900</p>
-        <Address>221, Baker Street, London, UK</Address>
+        <footer>
+            <p><span>Contact Us:</span> Mrs Caroline</p>
+            <p><span>Phone No:</span> +12345678900</p>
+            <Address>221, Baker Street, London, UK</Address>
+        </footer>
 
-
+    <button>Enquiry</button>
 
 
     </div>
