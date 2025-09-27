@@ -10,13 +10,15 @@
             background-color: bisque;
         }
 
-        header {
+        header,
+        .aside h2 {
             background-color: antiquewhite;
             text-align: center;
             font-family: 'Times New Roman', Times, serif;
         }
 
-        header h1 {
+        header h1,
+        .aside h2 {
             color: teal;
             text-align: center;
             text-decoration: underline dotted;
@@ -48,7 +50,8 @@
             z-index: 2;
         }
 
-        .Food h2 {
+        .Food h2,
+        .aside h3 {
             background-color: lightgoldenrodyellow;
             color: chocolate;
             text-align: center;
@@ -84,100 +87,152 @@
             padding: 10px 15px;
             border-radius: 5px;
         }
+
+        .grid-container {
+            grid-area: grid-container;
+        }
+
+        .aside {
+            grid-area: aside;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-template-areas:
+                "grid-container grid-container grid-container grid-container aside";
+        }
+
+        .aside {
+            padding: 20px;
+            padding-top: 5px;
+        }
     </style>
 </head>
 
 <body>
-    <!-- header -->
-    <header>
-        <h1>Indian Food</h1>
-        <p>the traditional food of India has been widely appreciated for it's fabulous use of herbs and spices.
-    </header>
+    <div class="grid-container">
+        <!-- header -->
+        <header>
+            <h1>Indian Food</h1>
+            <p>the traditional food of India has been widely appreciated for it's fabulous use of herbs and spices.
+        </header>
 
-    <div id="intro">
-        <p>Indian cuisine has been known for its large assortment of dishes. The cooking style varies from region to
-            region
-            and is
-            largely divided into South Indian and North Indian cuisines. India is quite famous for its diverse multi
-            cuisine
-            available in a large number of restaurants and hotel resorts, which is reminicen of unity in diversity. </p>
+        <div id="intro">
+            <p>Indian cuisine has been known for its large assortment of dishes. The cooking style varies from region to
+                region
+                and is
+                largely divided into South Indian and North Indian cuisines. India is quite famous for its diverse multi
+                cuisine
+                available in a large number of restaurants and hotel resorts, which is reminicen of unity in diversity.
+            </p>
+        </div>
+
+        <!-- nav bar -->
+        <nav>
+            <Ul>
+                <li><a href="">Bengal Food</a></li>
+                <li><a href="">Gujarati Food</a></li>
+                <li><a href="">Mughal Food</a></li>
+                <li><a href="">Punjabi Food</a></li>
+                <li><a href="">South Indian Cuisines</a></li>
+            </Ul>
+        </nav>
+
+        <!-- main section -->
+        <div class="Food">
+            <h2>Bengal Food</h2>
+        </div>
+        <div class="Desc">
+            <img src="./Bengal food.jpg" alt="Bengal" style="width: 200px; height: 200px">
+
+            <p>Bengal Cuisine is appreciated for its fabulous use of panchphoron, a term used to refer to the five
+                essential
+                spices, namely mustard, fenugreek seed, cumin seed, aniseed, and black cumin seed. the speciality of
+                bengal
+                food
+                lies in the perfect blend of sweet and spicy flavours</p>
+        </div>
+
+        <div class="Food">
+            <h2>Gujarati Food</h2>
+        </div>
+        <div class="Desc">
+            <img src="./Gujarati food.webp" alt="Gujarati" style="width: 200px; height: 200px">
+
+            <p>The traditional Gujarati food is primarily vegetarian and has a high nutritional value. the typical
+                Gujarati
+                thali consists of varied kinds of lip smacking dishes. Gujarati cuisine has so much to offer and each
+                dish
+                hasan
+                absolutely different cooking style</p>
+        </div>
+
+        <div class="Food">
+            <h2>Mughal Food</h2>
+        </div>
+        <div class="Desc">
+            <img src="./Mughal Food.webp" alt="Mughal" style="width: 200px; height: 200px">
+
+            <p>Mughal cuisines is one of the most popular cuisines, whose origin can be traced back to the Mughal
+                Empire.
+                Mughal
+                cuisine consists of dishes that were prepared in the kitchens Royal Emprerors. Indian cuisine is
+                predominantly
+                influenced by the practise of cooking in the mughal era.</p>
+        </div>
+
+        <div class="Food">
+            <h2>Punjabi Food</h2>
+        </div>
+        <div class="Desc">
+            <img src="./Punjabi Food.jpg" alt="Bengal" style="width: 200px; height: 200px">
+
+            <p>The cuisines of Punjab has an enormous variey of mouth-watering vegetarian as well as non vegetarian
+                dishes.
+                The
+                spice content ranges from minimal o pleasant to high. Punjabi food is relished by people of all
+                cummunities.
+                In
+                Punjab, home cookinhg differs from restaurantcooking style</p>
+        </div>
+
+        <div class="Food">
+            <h2>South Indian Cuisine</h2>
+        </div>
+        <div class="Desc">
+            <img src="./south indian cuisine.webp" alt="South" style="width: 200px; height: 200px">
+
+            <p>The South Indian Cuisine is known for its light, low calorie appetizing dishes. The traditional food of
+                South
+                India is mainly rice based. The cuisine is famous for its wondeful mix of rice and lentils to prepare
+                delicious
+                lip smacking dosas, vadas, idlis and uttapams.</p>
+        </div>
     </div>
-
-    <!-- nav bar -->
-    <nav>
-        <Ul>
-            <li><a href="">Bengal Food</a></li>
-            <li><a href="">Gujarati Food</a></li>
-            <li><a href="">Mughal Food</a></li>
-            <li><a href="">Punjabi Food</a></li>
-            <li><a href="">South Indian Cuisines</a></li>
-        </Ul>
-    </nav>
-
-    <!-- main section -->
-    <div class="Food">
-        <h2>Bengal Food</h2>
+    <div class="aside">
+        <h2>Popular Foods</h2>
+        <h3>North Indian</h3>
+        <ul>
+            <li>Chole Bhature</li>
+            <li>Samosa</li>
+            <li>Jalebi</li>
+            <li>Dahi Bhature</li>
+        </ul>
+        <h3>South Indian</h3>
+        <ul>
+            <li>Idli</li>
+            <li>Masala Dosa</li>
+            <li>Pongal</li>
+            <li>Bisi Bele Bath</li>
+        </ul>
+        <h3>Mughalai</h3>
+        <ul>
+            <li>Chicken Biriyani</li>
+            <li>Butter Chicken</li>
+            <li>Rogan Josh</li>
+        </ul>
     </div>
-    <div class="Desc">
-        <img src="./Bengal food.jpg" alt="Bengal" style="width: 200px; height: 200px">
-
-        <p>Bengal Cuisine is appreciated for its fabulous use of panchphoron, a term used to refer to the five essential
-            spices, namely mustard, fenugreek seed, cumin seed, aniseed, and black cumin seed. the speciality of bengal
-            food
-            lies in the perfect blend of sweet and spicy flavours</p>
-    </div>
-
-    <div class="Food">
-        <h2>Gujarati Food</h2>
-    </div>
-    <div class="Desc">
-        <img src="./Gujarati food.webp" alt="Gujarati" style="width: 200px; height: 200px">
-
-        <p>The traditional Gujarati food is primarily vegetarian and has a high nutritional value. the typical Gujarati
-            thali consists of varied kinds of lip smacking dishes. Gujarati cuisine has so much to offer and each dish
-            hasan
-            absolutely different cooking style</p>
-    </div>
-
-    <div class="Food">
-        <h2>Mughal Food</h2>
-    </div>
-    <div class="Desc">
-        <img src="./Mughal Food.webp" alt="Mughal" style="width: 200px; height: 200px">
-
-        <p>Mughal cuisines is one of the most popular cuisines, whose origin can be traced back to the Mughal Empire.
-            Mughal
-            cuisine consists of dishes that were prepared in the kitchens Royal Emprerors. Indian cuisine is
-            predominantly
-            influenced by the practise of cooking in the mughal era.</p>
-    </div>
-
-    <div class="Food">
-        <h2>Punjabi Food</h2>
-    </div>
-    <div class="Desc">
-        <img src="./Punjabi Food.jpg" alt="Bengal" style="width: 200px; height: 200px">
-
-        <p>The cuisines of Punjab has an enormous variey of mouth-watering vegetarian as well as non vegetarian dishes.
-            The
-            spice content ranges from minimal o pleasant to high. Punjabi food is relished by people of all cummunities.
-            In
-            Punjab, home cookinhg differs from restaurantcooking style</p>
-    </div>
-
-    <div class="Food">
-        <h2>South Indian Cuisine</h2>
-    </div>
-    <div class="Desc">
-        <img src="./south indian cuisine.webp" alt="South" style="width: 200px; height: 200px">
-
-        <p>The South Indian Cuisine is known for its light, low calorie appetizing dishes. The traditional food of South
-            India is mainly rice based. The cuisine is famous for its wondeful mix of rice and lentils to prepare
-            delicious
-            lip smacking dosas, vadas, idlis and uttapams.</p>
-    </div>
-
-
 
 
 
